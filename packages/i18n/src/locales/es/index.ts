@@ -701,6 +701,17 @@ export const es = {
     stop: "Detener",
     stopping: "Deteniendo…",
     dismiss: "Cerrar",
+    headerCount: "{{count}} tareas en segundo plano",
+    removeFailed: "No se pudo quitar esta tarea.",
+  },
+  taskDock: {
+    title: "Pendientes y tareas en segundo plano",
+    tabTodo: "Pendientes",
+    tabTasks: "Tareas en segundo plano",
+    newTasks: "{{count}} tareas nuevas",
+    runningCount: "{{count}} en ejecución",
+    expand: "Expandir {{label}}",
+    collapse: "Contraer {{label}}",
   },
   planHistory: {
     pending: "Pendiente de aprobación",

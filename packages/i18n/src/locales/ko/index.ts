@@ -710,6 +710,17 @@ export const ko = {
     stop: "중지",
     stopping: "중지 중…",
     dismiss: "닫기",
+    headerCount: "백그라운드 작업 {{count}}개",
+    removeFailed: "이 작업을 제거하지 못했습니다.",
+  },
+  taskDock: {
+    title: "할 일 및 백그라운드 작업",
+    tabTodo: "할 일",
+    tabTasks: "백그라운드 작업",
+    newTasks: "새 작업 {{count}}개",
+    runningCount: "{{count}}개 실행 중",
+    expand: "{{label}} 펼치기",
+    collapse: "{{label}} 접기",
   },
   planHistory: {
     pending: "승인 대기",

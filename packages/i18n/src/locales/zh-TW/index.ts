@@ -706,6 +706,17 @@ export const zhTW = {
     stop: "停止",
     stopping: "停止中…",
     dismiss: "關閉",
+    headerCount: "{{count}} 個背景任務",
+    removeFailed: "無法移除這個任務。",
+  },
+  taskDock: {
+    title: "待辦與背景任務",
+    tabTodo: "待辦",
+    tabTasks: "背景任務",
+    newTasks: "{{count}} 個新任務",
+    runningCount: "{{count}} 個執行中",
+    expand: "展開{{label}}",
+    collapse: "收合{{label}}",
   },
   planHistory: {
     pending: "待審批",

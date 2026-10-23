@@ -706,6 +706,17 @@ export const zhCN = {
     stop: "停止",
     stopping: "停止中…",
     dismiss: "关闭",
+    headerCount: "{{count}} 个后台任务",
+    removeFailed: "无法移除这个任务。",
+  },
+  taskDock: {
+    title: "待办与后台任务",
+    tabTodo: "待办",
+    tabTasks: "后台任务",
+    newTasks: "{{count}} 个新任务",
+    runningCount: "{{count}} 个运行中",
+    expand: "展开{{label}}",
+    collapse: "收起{{label}}",
   },
   planHistory: {
     pending: "待审批",

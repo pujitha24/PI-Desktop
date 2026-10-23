@@ -701,6 +701,17 @@ export const fr = {
     stop: "Arrêter",
     stopping: "Arrêt…",
     dismiss: "Fermer",
+    headerCount: "{{count}} tâches en arrière-plan",
+    removeFailed: "Impossible de retirer cette tâche.",
+  },
+  taskDock: {
+    title: "À faire et tâches en arrière-plan",
+    tabTodo: "À faire",
+    tabTasks: "Tâches en arrière-plan",
+    newTasks: "{{count}} nouvelles tâches",
+    runningCount: "{{count}} en cours",
+    expand: "Développer {{label}}",
+    collapse: "Réduire {{label}}",
   },
   planHistory: {
     pending: "En attente d’approbation",

@@ -701,6 +701,17 @@ export const de = {
     stop: "Stoppen",
     stopping: "Stoppe…",
     dismiss: "Schließen",
+    headerCount: "{{count}} Hintergrundaufgaben",
+    removeFailed: "Diese Aufgabe konnte nicht entfernt werden.",
+  },
+  taskDock: {
+    title: "Aufgaben",
+    tabTodo: "To-do",
+    tabTasks: "Hintergrundaufgaben",
+    newTasks: "{{count}} neue Aufgaben",
+    runningCount: "{{count}} laufen",
+    expand: "{{label}} ausklappen",
+    collapse: "{{label}} einklappen",
   },
   planHistory: {
     pending: "Genehmigung ausstehend",

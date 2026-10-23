@@ -710,6 +710,17 @@ export const tr = {
     stop: "Durdur",
     stopping: "Durduruluyor…",
     dismiss: "Kapat",
+    headerCount: "{{count}} arka plan görevi",
+    removeFailed: "Bu görev kaldırılamadı.",
+  },
+  taskDock: {
+    title: "Yapılacaklar ve arka plan görevleri",
+    tabTodo: "Yapılacaklar",
+    tabTasks: "Arka plan görevleri",
+    newTasks: "{{count}} yeni görev",
+    runningCount: "{{count}} çalışıyor",
+    expand: "{{label}} genişlet",
+    collapse: "{{label}} daralt",
   },
   planHistory: {
     pending: "Onay bekleniyor",

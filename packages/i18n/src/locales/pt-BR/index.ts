@@ -700,6 +700,17 @@ export const ptBR = {
     stop: "Parar",
     stopping: "Parando…",
     dismiss: "Fechar",
+    headerCount: "{{count}} tarefas em segundo plano",
+    removeFailed: "Não foi possível remover esta tarefa.",
+  },
+  taskDock: {
+    title: "Pendências e tarefas em segundo plano",
+    tabTodo: "Pendências",
+    tabTasks: "Tarefas em segundo plano",
+    newTasks: "{{count}} tarefas novas",
+    runningCount: "{{count}} em execução",
+    expand: "Expandir {{label}}",
+    collapse: "Recolher {{label}}",
   },
   planHistory: {
     pending: "Aguardando aprovação",

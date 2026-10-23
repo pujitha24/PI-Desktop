@@ -713,6 +713,17 @@ export const en = {
     stop: "Stop",
     stopping: "Stopping…",
     dismiss: "Dismiss",
+    headerCount: "{{count}} background tasks",
+    removeFailed: "Could not remove this task.",
+  },
+  taskDock: {
+    title: "Todo and background tasks",
+    tabTodo: "Todo",
+    tabTasks: "Background tasks",
+    newTasks: "{{count}} new tasks",
+    runningCount: "{{count}} running",
+    expand: "Expand {{label}}",
+    collapse: "Collapse {{label}}",
   },
   planHistory: {
     pending: "Awaiting approval",
