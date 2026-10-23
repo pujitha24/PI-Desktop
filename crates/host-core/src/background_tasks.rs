@@ -748,9 +748,16 @@ mod tests {
         };
 
         for _ in 0..MAX_RUNNING_TASKS_PER_SESSION {
-            spawn_background_task_detached(&state, &session_a, "sleep 30", &shell, dir.path(), None)
-                .await
-                .unwrap();
+            spawn_background_task_detached(
+                &state,
+                &session_a,
+                "sleep 30",
+                &shell,
+                dir.path(),
+                None,
+            )
+            .await
+            .unwrap();
         }
 
         // The other session is untouched by A being full.
@@ -815,7 +822,10 @@ mod tests {
             let st = state.lock().await;
             st.background_tasks.stop_session_running(&session_a)
         };
-        assert_eq!(signalled, 1, "exactly the deleted session's task is signalled");
+        assert_eq!(
+            signalled, 1,
+            "exactly the deleted session's task is signalled"
+        );
 
         // A is stopping, B keeps running — the signal did not fan out.
         let mut a_settled = false;
@@ -832,7 +842,10 @@ mod tests {
                 break;
             }
         }
-        assert!(a_settled, "the deleted session's task reaches a terminal state");
+        assert!(
+            a_settled,
+            "the deleted session's task reaches a terminal state"
+        );
 
         {
             let mut st = state.lock().await;
