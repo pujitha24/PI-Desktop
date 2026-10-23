@@ -98,25 +98,21 @@ Two smaller defects compounded these:
 - `06-host-rpc-protocol.md`: notes that `list` stays session-agnostic and that
   removal issues no RPC.
 
-## What the demos show
+The chosen layout was prototyped before it was implemented, and the prototype is
+an uploaded artifact rather than repository content:
 
-`docs/demos/background-task-dock/` holds the interactive prototypes used to
-settle the layout. Open `index.html`.
+<https://gist.github.com/Tioit-Wang/e70adfa435287f7673212e8a135343a6>
 
-| Demo | Question it answers |
-| --- | --- |
-| 1 | Empty-side and empty-container rules (tab hidden vs. container absent) |
-| 2 | Per-session tab memory, and the fallback when a remembered side empties |
-| 3 | Badge accumulation without stealing the tab; clearing on entry |
-| 4 | Container-level collapse, and removal refused for a live or settling task |
-| 5 | Strict session scoping, delete-stops-tasks vs. archive-does-not |
-| 6 | Three header layouts side by side (inline / adaptive / stacked) |
-| 7 | Narrow-width stress: which copy degrades first, measured at 420–760px |
-| 8 | The chosen inline layout running the complete flow with a live spec check |
-| final | The shipped layout as a clean product surface, no instrumentation |
+It is one self-contained page with no build step and no sibling files, rendering
+the real token values and the real container markup: five tasks covering
+running / exited / failed / stopped (two with deliberately long commands), five
+todos, the live count, the badge, collapse, removal admission, and session
+deletion with cross-session isolation.
 
-`docs/demos/background-task-dock/tokens.css` copies the real token values from
-`apps/desktop/src/styles/tokens.css`, so the prototypes read like the product.
+The variants that were built to choose between are not kept: an inline tab list
+in the header won over an adaptive one (tabs drop to their own row when expanded)
+and over the previous stacked bar, because only the inline form keeps the tabs
+reachable while collapsed without a second header state.
 
 ## Verification
 
