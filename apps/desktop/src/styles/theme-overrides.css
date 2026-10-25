@@ -216,12 +216,13 @@
 }
 
 /* Keep the Agent/Plan/Goal trigger stable while its localized label changes.
-   The width covers the longest built-in label plus the menu caret. */
+   The width covers the longest built-in label plus the menu caret and
+   follows the font scale so enlarged labels are not ellipsized. */
 .composer-mode-chip {
-  width: 96px;
-  min-width: 96px;
-  max-width: 96px;
-  flex: 0 0 96px;
+  width: calc(96px * var(--font-scale));
+  min-width: calc(96px * var(--font-scale));
+  max-width: calc(96px * var(--font-scale));
+  flex: 0 0 calc(96px * var(--font-scale));
   justify-content: space-between;
 }
 

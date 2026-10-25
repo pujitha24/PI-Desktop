@@ -65,10 +65,10 @@ test("mode selector reserves the longest localized label width", () => {
   );
 
   const block = styles.match(/\.composer-mode-chip\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(block, /width:\s*96px;/);
-  assert.match(block, /min-width:\s*96px;/);
-  assert.match(block, /max-width:\s*96px;/);
-  assert.match(block, /flex:\s*0 0 96px;/);
+  assert.match(block, /width:\s*calc\(96px \* var\(--font-scale\)\);/);
+  assert.match(block, /min-width:\s*calc\(96px \* var\(--font-scale\)\);/);
+  assert.match(block, /max-width:\s*calc\(96px \* var\(--font-scale\)\);/);
+  assert.match(block, /flex:\s*0 0 calc\(96px \* var\(--font-scale\)\);/);
   assert.match(styles, /\.composer-mode-chip-label\s*\{[\s\S]*?text-overflow:\s*ellipsis;/);
 });
 
